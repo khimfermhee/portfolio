@@ -10,8 +10,7 @@ import {
   Cpu, 
   Database,
   Building2,
-  Calendar,
-  ExternalLink
+  Calendar
 } from "lucide-react";
 
 export default function Portfolio() {
@@ -141,9 +140,7 @@ export default function Portfolio() {
                     <p className="text-xs font-medium text-blue-600 mb-2">Jul 2019 – Jan 2021</p>
                     <div className="text-sm text-slate-600 leading-relaxed space-y-4">
                       <div>
-                        <a href="https://pinesportal.com/" target="_blank" rel="noreferrer" className="flex items-center font-semibold text-blue-600 hover:underline mb-1">
-                          A. Pines Portal <ExternalLink className="w-3 h-3 ml-1" />
-                        </a>
+                        <h6 className="font-semibold text-slate-700 mb-1">A. Pines Portal</h6>
                         <ul className="list-disc pl-5 space-y-1 text-slate-600">
                           <li>A centralized student app designed to cater to specific requests and foster faster information dissemination.</li>
                           <li>Students can easily access class schedules, levels, test results, announcements, calendars, and financial reports (cash balance and points).</li>
@@ -153,9 +150,7 @@ export default function Portfolio() {
                       </div>
                       
                       <div>
-                        <a href="https://pinestalking.com/" target="_blank" rel="noreferrer" className="flex items-center font-semibold text-blue-600 hover:underline mb-1">
-                          B. Pinestalking-11talk <ExternalLink className="w-3 h-3 ml-1" />
-                        </a>
+                        <h6 className="font-semibold text-slate-700 mb-1">B. Pinestalking-11talk</h6>
                         <ul className="list-disc pl-5 space-y-1 text-slate-600">
                           <li>Official website of Pines International Academy&apos;s online class offerings.</li>
                           <li>Platform for aspiring students to explore online class materials and view pricing tables for courses.</li>
@@ -214,9 +209,7 @@ export default function Portfolio() {
                     <p className="text-xs font-medium text-slate-500 mb-2">Aug 2017 – Jan 2019</p>
                     <div className="text-sm text-slate-600 leading-relaxed space-y-4">
                       <div>
-                        <a href="https://avmedix.com/" target="_blank" rel="noreferrer" className="flex items-center font-semibold text-blue-600 hover:underline mb-1">
-                          A. Avmedix <ExternalLink className="w-3 h-3 ml-1" />
-                        </a>
+                        <h6 className="font-semibold text-slate-700 mb-1">A. Avmedix</h6>
                         <ul className="list-disc pl-5 space-y-1 text-slate-600">
                           <li>Anatomy reference and medical information.</li>
                           <li>Patient resource and data management for medical offices.</li>
@@ -225,9 +218,7 @@ export default function Portfolio() {
                       </div>
                       
                       <div>
-                        <a href="https://zabulu.com/" target="_blank" rel="noreferrer" className="flex items-center font-semibold text-blue-600 hover:underline mb-1">
-                          B. Zabulu <ExternalLink className="w-3 h-3 ml-1" />
-                        </a>
+                        <h6 className="font-semibold text-slate-700 mb-1">B. Zabulu</h6>
                         <p className="mb-2">Semi-private, family-friendly social media platform with features grouped into:</p>
                         <div className="space-y-3">
                           <div>
