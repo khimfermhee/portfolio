@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { 
   Mail, 
   Phone, 
@@ -11,13 +12,48 @@ import {
   Building2,
   GitBranch,
   MapPin,
-  Download
+  Download,
+  Loader2
 } from "lucide-react";
 
 export default function Portfolio() {
+  const [isExporting, setIsExporting] = useState(false);
+
+  const handleExport = async () => {
+    setIsExporting(true);
+    try {
+      // Dynamically import html2pdf to avoid SSR issues
+      const html2pdf = (await import('html2pdf.js')).default;
+      
+      const element = document.getElementById('resume-content');
+      
+      const opt = {
+        margin:       10,
+        filename:     'Khim_Fermhee_Ronquillo_Resume.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { 
+          scale: 2,
+          useCORS: true,
+          ignoreElements: (el: Element) => el.id === 'export-button'
+        },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      // Generate PDF blob and open in new tab
+      const pdfBlobUrl = await html2pdf().from(element).set(opt).output('bloburl');
+      window.open(pdfBlobUrl, '_blank');
+      
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      alert('Failed to generate PDF. Please try again.');
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans print:bg-white print:py-0">
-      <div className="max-w-5xl mx-auto space-y-12 print:space-y-6">
+      <div id="resume-content" className="max-w-5xl mx-auto space-y-12 print:space-y-6">
         
         {/* Header Section */}
         <header className="bg-white rounded-2xl shadow-sm p-8 md:p-12 border border-slate-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 print:border-none print:shadow-none print:p-0">
@@ -46,11 +82,13 @@ export default function Portfolio() {
               Baguio City, Philippines
             </div>
             <button 
-              onClick={() => window.print()}
-              className="mt-4 flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors print:hidden"
+              id="export-button"
+              onClick={handleExport}
+              disabled={isExporting}
+              className="mt-4 flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium py-2 px-4 rounded-lg transition-colors print:hidden"
             >
-              <Download className="w-4 h-4 mr-2" />
-              Export to PDF
+              {isExporting ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Download className="w-4 h-4 mr-2" />}
+              {isExporting ? 'Generating...' : 'Export to PDF'}
             </button>
           </div>
         </header>
