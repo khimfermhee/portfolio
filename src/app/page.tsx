@@ -165,9 +165,16 @@ export default function Portfolio() {
                 <div className="mt-3 relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-full">
                   <h5 className="font-semibold text-slate-800">Software Engineer</h5>
                   <p className="text-xs font-medium text-slate-500 mb-2">Jan 2021 – Jun 2023 • Baguio City</p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Developed and maintained software applications, APIs, databases, and business systems.
-                  </p>
+                  <div className="text-sm text-slate-600 leading-relaxed">
+                    <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                      <li>Developed and maintained software applications, APIs, databases, and enterprise business systems.</li>
+                      <li>Created scalable Election Systems for secure voting and tallying.</li>
+                      <li>Built and integrated Accounting Systems for financial management and reporting.</li>
+                      <li>Developed Fintech solutions, including secure Payment Gateway integrations.</li>
+                      <li>Created comprehensive Inventory Systems, POS Systems, and Booking Systems.</li>
+                      <li>Designed and developed Crop Programming Systems for agricultural management.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
