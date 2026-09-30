@@ -138,35 +138,16 @@ export default function Portfolio() {
                   <div className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-500 before:rounded-full">
                     <h5 className="font-semibold text-slate-800">IT / Web Developer / Programmer</h5>
                     <p className="text-xs font-medium text-blue-600 mb-2">Jul 2019 – Jan 2021</p>
-                    <div className="text-sm text-slate-600 leading-relaxed space-y-4">
-                      <div>
-                        <h6 className="font-semibold text-slate-700 mb-1">A. Pines Portal</h6>
-                        <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                          <li>A centralized student app designed to cater to specific requests and foster faster information dissemination.</li>
-                          <li>Students can easily access class schedules, levels, test results, announcements, calendars, and financial reports (cash balance and points).</li>
-                          <li>Students can send in specific and personal requests such as additional blankets for their quarters.</li>
-                          <li>Schedule consultations with respective managers for faster evaluation of the student&apos;s educational needs.</li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h6 className="font-semibold text-slate-700 mb-1">B. Pinestalking-11talk</h6>
-                        <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                          <li>Official website of Pines International Academy&apos;s online class offerings.</li>
-                          <li>Platform for aspiring students to explore online class materials and view pricing tables for courses.</li>
-                          <li>Features comprehensive teacher profiles with introduction videos, specialties, classes they teach, and satisfaction rates.</li>
-                          <li>Past students can contact teachers directly via a &quot;contact me&quot; option in profiles.</li>
-                          <li>Integrated a blog system for online study guides and navigation.</li>
-                          <li>Implemented a 4-step learning system: students learn vocabulary and expressions before taking their class through initial quizzes, English audio files, and follow-up conversations.</li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h6 className="font-semibold text-slate-700 mb-1">C. PIA / CBOA Gate Keeper</h6>
-                        <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                          <li>System that monitors students who go outside and inside the Academy.</li>
-                        </ul>
-                      </div>
+                    <div className="text-sm text-slate-600 leading-relaxed">
+                      <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                        <li>Developed a centralized student app designed to cater to specific requests and foster faster information dissemination.</li>
+                        <li>Created features for students to easily access class schedules, levels, test results, announcements, calendars, and financial reports.</li>
+                        <li>Implemented functionality for students to send specific and personal requests and schedule consultations with managers.</li>
+                        <li>Built an official website platform for online class offerings, allowing students to explore materials and pricing.</li>
+                        <li>Developed comprehensive teacher profiles featuring introduction videos, specialties, and satisfaction rates with direct contact capabilities.</li>
+                        <li>Integrated a blog system for online study guides and implemented a 4-step interactive learning system.</li>
+                        <li>Developed a gatekeeper system to monitor student entry and exit within the Academy.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -207,39 +188,15 @@ export default function Portfolio() {
                   <div className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-full">
                     <h5 className="font-semibold text-slate-800">Programmer (Admedix / JSV Software)</h5>
                     <p className="text-xs font-medium text-slate-500 mb-2">Aug 2017 – Jan 2019</p>
-                    <div className="text-sm text-slate-600 leading-relaxed space-y-4">
-                      <div>
-                        <h6 className="font-semibold text-slate-700 mb-1">A. Avmedix</h6>
-                        <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                          <li>Anatomy reference and medical information.</li>
-                          <li>Patient resource and data management for medical offices.</li>
-                          <li>Integrated suite of hospital and patient management tools.</li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h6 className="font-semibold text-slate-700 mb-1">B. Zabulu</h6>
-                        <p className="mb-2">Semi-private, family-friendly social media platform with features grouped into:</p>
-                        <div className="space-y-3">
-                          <div>
-                            <span className="font-medium text-slate-700 block">Your Life (Category):</span>
-                            <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                              <li>Family tree.</li>
-                              <li>Private albums for family members (photos, videos, music).</li>
-                              <li>Messaging, chat, journals, and estate records.</li>
-                              <li>Health records, diet, and exercise tracking.</li>
-                            </ul>
-                          </div>
-                          <div>
-                            <span className="font-medium text-slate-700 block">The World (Category):</span>
-                            <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                              <li>Resources: Creating and publishing articles, blogs, and workouts.</li>
-                              <li>Entertainment: Making events, comics, and games.</li>
-                              <li>World: Commerce, advertising, and selling your own works.</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="text-sm text-slate-600 leading-relaxed">
+                      <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                        <li>Developed platforms for anatomy reference, medical information, and patient resource management for medical offices.</li>
+                        <li>Created an integrated suite of hospital and patient management tools.</li>
+                        <li>Built a semi-private, family-friendly social media platform featuring family trees and private albums for multimedia sharing.</li>
+                        <li>Implemented social features including messaging, chat, journals, estate records, and health/diet/exercise tracking.</li>
+                        <li>Developed content creation tools for publishing articles, blogs, workouts, events, comics, and games.</li>
+                        <li>Integrated e-commerce capabilities for advertising and selling user-generated works.</li>
+                      </ul>
                     </div>
                   </div>
                   
@@ -265,22 +222,13 @@ export default function Portfolio() {
                 <div className="mt-3 relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-400 before:rounded-full">
                   <h5 className="font-semibold text-slate-800">Programmer</h5>
                   <p className="text-xs font-medium text-slate-500 mb-2">Sep 2016 – Jul 2019 • Baguio City</p>
-                  <div className="text-sm text-slate-600 leading-relaxed space-y-3 mt-3">
-                    <div>
-                      <h6 className="font-semibold text-slate-700">A. Registry of Barangay Inhabitants and Migrants</h6>
-                      <p className="text-xs text-slate-500 mb-1">Commission on Population Philippines</p>
-                      <p>Focused on institutionalizing the use of generated data for tracking population movements and planning for a suitable POPDEV initiative at the local level. Institutionalized demographic data banking and management in selected LGUs.</p>
-                    </div>
-                    <div>
-                      <h6 className="font-semibold text-slate-700">B. Personalized Point of Sale System</h6>
-                    </div>
-                    <div>
-                      <h6 className="font-semibold text-slate-700">C. Personalized Clinic Management System</h6>
-                    </div>
-                    <div>
-                      <h6 className="font-semibold text-slate-700">D. Personalized Employee Management</h6>
-                      <p>Utilizing RFID and Biometrics.</p>
-                    </div>
+                  <div className="text-sm text-slate-600 leading-relaxed mt-3">
+                    <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                      <li>Developed a Registry of Barangay Inhabitants and Migrants for the Commission on Population Philippines to track population movements.</li>
+                      <li>Institutionalized demographic data banking and management in selected LGUs.</li>
+                      <li>Developed personalized Point of Sale (POS) and Clinic Management systems.</li>
+                      <li>Built a personalized Employee Management system utilizing RFID and Biometrics.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
