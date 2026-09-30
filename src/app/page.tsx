@@ -4,11 +4,9 @@ import {
   Briefcase, 
   GraduationCap, 
   Code, 
-  Server, 
   Brain, 
   Database,
   Building2,
-  Calendar,
   GitBranch,
   MapPin
 } from "lucide-react";
