@@ -130,9 +130,13 @@ export default function Portfolio() {
                   <div className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-500 before:rounded-full">
                     <h5 className="font-semibold text-slate-800">Programmer (Remote Learning Solutions Inc.)</h5>
                     <p className="text-xs font-medium text-blue-600 mb-2">Sep 2023 – Present</p>
-                    <p className="text-sm text-slate-600 leading-relaxed">
-                      Develop and maintain school information systems, web applications, and internal software solutions.
-                    </p>
+                    <div className="text-sm text-slate-600 leading-relaxed">
+                      <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                        <li>Develop and maintain school information systems, web applications, and internal software solutions.</li>
+                        <li>Build and deploy interactive Kiosk systems for institutional use.</li>
+                        <li>Improve, optimize, and scale existing projects across the organization.</li>
+                      </ul>
+                    </div>
                   </div>
                   
                   <div className="relative pl-4 before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-500 before:rounded-full">
